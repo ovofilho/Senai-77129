@@ -5,6 +5,8 @@
  */
 package designpatterns;
 
+
+
 /**
  *
  * @author Aluno
@@ -16,6 +18,26 @@ public class DesignPatterns {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Fabrica fabrica = new Fabrica();
+        
+        Transporte obj1;
+        
+        obj1 = fabrica.getFabrica(1);
+        Transporte obj2;
+        
+        Transporte obj3;
+        
+        obj2 = fabrica.getFabrica(2);
+        
+        obj1.abastecer();
+        obj2.abastecer();
+        
+        obj1.entregar();
+        obj2.entregar();
+        
+        obj3=fabrica.getFabrica(5);
+        
+        
     }
     
 }
